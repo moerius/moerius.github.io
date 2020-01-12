@@ -13,3 +13,7 @@ h1, h2 {
     font-size: 1em;
     font-weight: normal;
 }
+header h1.title-event .title-event-wrap {
+    opacity: .33;
+    white-space: pre;
+  }
