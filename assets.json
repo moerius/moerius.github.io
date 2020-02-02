@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Habile, Bill",
+        "path": "assets/sounds/habill.mp3",
+        "id": "sound1"
+    },
+    {
+        "name": "Allahu akbar !",
+        "path": "assets/sounds/allah.mp3",
+        "id": "sound2"
+    },
+    {
+        "name": "Alpaga",
+        "path": "assets/sounds/alpaga.mp3",
+        "id": "sound3"
+    },
+    {
+        "name": "J'aime me beurrer la biscotte",
+        "path": "assets/sounds/biscotte.mp3",
+        "id": "sound5"
+    },
+    {
+        "name": "Je ne résiste jamais..",
+        "path": "assets/sounds/brune.mp3",
+        "id": "sound6"
+    },
+    {
+        "name": "Le jeu en vaut la chandelle",
+        "path": "assets/sounds/chandelle.mp3",
+        "id": "sound7"
+    },
+    {
+        "name": "Confiance",
+        "path": "assets/sounds/confiance.mp3",
+        "id": "sound8"
+    },
+    {
+        "name": "Fennec !",
+        "path": "assets/sounds/fennec.mp3",
+        "id": "sound9"
+    },
+    {
+        "name": "Forme",
+        "path": "assets/sounds/forme.mp3",
+        "id": "sound10"
+    },
+    {
+        "name": "Il s'agirait de grandir !",
+        "path": "assets/sounds/grandir.mp3",
+        "id": "sound4"
+    }
+]

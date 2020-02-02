@@ -1,17 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href='//fonts.googleapis.com/css?family=Source+Code+Pro:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Source+Code+Pro:300&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
     <link rel='stylesheet' type='text/css' href='/style.css'>
-    <link rel='shortcut icon' href="/favicon.png">
+    <link rel='shortcut icon' href="/assets/img/favicon.png">
     <title>Arthur Thévenot</title>
 </head>
+
 <body>
     <p class="title">OSS 117 - Soundboard</p>
-    <audio id="sound1" src="test.mp3" preload="auto"></audio>
-    <button onclick="document.getElementById('sound1').play();">Play it</button>
+
+    <section>
+    </section>
+
+    <script>
+        var section = document.querySelector('section');
+        var requestURL = 'assets.json';
+        var request = new XMLHttpRequest();
+
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+
+        request.onload = function() {
+            var sound = request.response;
+            var i;
+            for (i = 0; i < sound.length; i++) {
+                populateSound(sound[i]);
+                populateButton(sound[i]);
+            }
+        }
+
+        function populateSound(jsonObj) {
+            var myAudio = document.createElement('audio');
+            
+            myAudio.src = jsonObj['path'];
+            myAudio.preload = "auto";
+            myAudio.id = jsonObj['id'];
+            
+            section.appendChild(myAudio);
+        }
+        function populateButton(jsonObj) {
+            var myButton = document.createElement('button');
+
+            myButton.textContent = jsonObj["name"];
+            myButton.onclick = function() {document.getElementById(jsonObj['id']).play()};
+            
+            section.appendChild(myButton);
+        }
+    </script>
 </body>
+
 </html>
