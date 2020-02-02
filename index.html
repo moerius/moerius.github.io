@@ -13,7 +13,18 @@
 </head>
 
 <body>
-    <p class="title">OSS 117 - Soundboard</p>
+    <header>
+        <div>
+            <h1 class="title-global">
+                <a href="#">OSS 117</a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="#">SoundBoard</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <section>
     </section>
@@ -27,7 +38,7 @@
         request.responseType = 'json';
         request.send();
 
-        request.onload = function() {
+        request.onload = function () {
             var sound = request.response;
             var i;
             for (i = 0; i < sound.length; i++) {
@@ -38,19 +49,19 @@
 
         function populateSound(jsonObj) {
             var myAudio = document.createElement('audio');
-            
+
             myAudio.src = jsonObj['path'];
             myAudio.preload = "auto";
             myAudio.id = jsonObj['id'];
-            
+
             section.appendChild(myAudio);
         }
         function populateButton(jsonObj) {
             var myButton = document.createElement('button');
 
             myButton.textContent = jsonObj["name"];
-            myButton.onclick = function() {document.getElementById(jsonObj['id']).play()};
-            
+            myButton.onclick = function () { document.getElementById(jsonObj['id']).play() };
+
             section.appendChild(myButton);
         }
     </script>
