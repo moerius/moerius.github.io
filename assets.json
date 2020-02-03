@@ -48,5 +48,10 @@
         "name": "Il s'agirait de grandir !",
         "path": "assets/sounds/grandir.mp3",
         "id": "sound11"
+    },
+    {
+        "name": "Gratin cairote",
+        "path": "assets/sounds/gratin.mp3",
+        "id": "sound12"
     }
 ]
