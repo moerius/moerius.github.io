@@ -20,6 +20,11 @@
         "id": "sound5"
     },
     {
+        "name": "J'aime le bruit blanc de l'eau",
+        "path": "assets/sounds/watersound.mp3",
+        "id": "sound4"
+    },
+    {
         "name": "Je ne résiste jamais..",
         "path": "assets/sounds/brune.mp3",
         "id": "sound6"
