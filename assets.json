@@ -58,5 +58,10 @@
         "name": "Gratin cairote",
         "path": "assets/sounds/gratin.mp3",
         "id": "sound12"
+    },
+    {
+        "name": "J'aime me battre",
+        "path": "assets/sounds/battre.mp3",
+        "id": "sound13"
     }
 ]
