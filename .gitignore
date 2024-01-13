@@ -3,3 +3,6 @@
 .git
 a
 b
+
+cat a | cut -d '/' -f 3 | rev | cut -d '.' -f 2 | rev
+

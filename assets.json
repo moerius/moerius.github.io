@@ -1,67 +1,112 @@
 [
     {
-        "name": "Habile, Bill",
-        "path": "assets/sounds/habill.mp3",
+        "path": "assets/sounds/allah.mp3",
+        "name": "allah",
         "id": "sound1"
     },
     {
-        "name": "Allahu akbar !",
-        "path": "assets/sounds/allah.mp3",
+        "path": "assets/sounds/alpaga.mp3",
+        "name": "alpaga",
         "id": "sound2"
     },
     {
-        "name": "Alpaga",
-        "path": "assets/sounds/alpaga.mp3",
+        "path": "assets/sounds/battre.mp3",
+        "name": "battre",
         "id": "sound3"
     },
     {
-        "name": "J'aime me beurrer la biscotte",
         "path": "assets/sounds/biscotte.mp3",
-        "id": "sound5"
-    },
-    {
-        "name": "J'aime le bruit blanc de l'eau",
-        "path": "assets/sounds/watersound.mp3",
+        "name": "biscotte",
         "id": "sound4"
     },
     {
-        "name": "Je ne résiste jamais..",
         "path": "assets/sounds/brune.mp3",
+        "name": "brune",
+        "id": "sound5"
+    },
+    {
+        "path": "assets/sounds/chandelle.mp3",
+        "name": "chandelle",
         "id": "sound6"
     },
     {
-        "name": "Le jeu en vaut la chandelle",
-        "path": "assets/sounds/chandelle.mp3",
+        "path": "assets/sounds/confiance.mp3",
+        "name": "confiance",
         "id": "sound7"
     },
     {
-        "name": "Confiance",
-        "path": "assets/sounds/confiance.mp3",
+        "path": "assets/sounds/fennec.mp3",
+        "name": "fennec",
         "id": "sound8"
     },
     {
-        "name": "Fennec !",
-        "path": "assets/sounds/fennec.mp3",
+        "path": "assets/sounds/forme.mp3",
+        "name": "forme",
         "id": "sound9"
     },
     {
-        "name": "Forme",
-        "path": "assets/sounds/forme.mp3",
+        "path": "assets/sounds/grandir.mp3",
+        "name": "grandir",
         "id": "sound10"
     },
     {
-        "name": "Il s'agirait de grandir !",
-        "path": "assets/sounds/grandir.mp3",
+        "path": "assets/sounds/gratin.mp3",
+        "name": "gratin",
         "id": "sound11"
     },
     {
-        "name": "Gratin cairote",
-        "path": "assets/sounds/gratin.mp3",
+        "path": "assets/sounds/habill.mp3",
+        "name": "habill",
         "id": "sound12"
     },
     {
-        "name": "J'aime me battre",
-        "path": "assets/sounds/battre.mp3",
+        "path": "assets/sounds/huile.mp3",
+        "name": "huile",
         "id": "sound13"
+    },
+    {
+        "path": "assets/sounds/mamelon.mp3",
+        "name": "mamelon",
+        "id": "sound14"
+    },
+    {
+        "path": "assets/sounds/muezzin.mp3",
+        "name": "muezzin",
+        "id": "sound15"
+    },
+    {
+        "path": "assets/sounds/pistolet.mp3",
+        "name": "pistolet",
+        "id": "sound16"
+    },
+    {
+        "path": "assets/sounds/polish.mp3",
+        "name": "polish",
+        "id": "sound17"
+    },
+    {
+        "path": "assets/sounds/royale.mp3",
+        "name": "royale",
+        "id": "sound18"
+    },
+    {
+        "path": "assets/sounds/sale.mp3",
+        "name": "sale",
+        "id": "sound19"
+    },
+    {
+        "path": "assets/sounds/sovietéponge.mp3",
+        "name": "sovietéponge",
+        "id": "sound20"
+    },
+    {
+        "path": "assets/sounds/useless.mp3",
+        "name": "useless",
+        "id": "sound21"
+    },
+    {
+        "path": "assets/sounds/watersound.mp3",
+        "name": "watersound",
+        "id": "sound22"
     }
 ]
