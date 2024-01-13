@@ -13,12 +13,12 @@
 
 <body>
     <div>
-        <header class="text-center">
-                <p class="title">OSS 117</p>
-                <p class="tagline big">(Les répliques cultes)</p>
-                <p class="tagline">Extraits d'OSS 117</p>
-        </header>
-    </div>
+    <header class="text-center">
+            <p class="title">OSS 117</p>
+            <p class="tagline big">(Les répliques cultes)</p>
+            <p class="tagline">Extraits d'OSS 117</p>
+    </header>
+</div>
 
     <section>
     </section>
@@ -36,12 +36,12 @@
             var sound = request.response;
             var i;
             for (i = 0; i < sound.length; i++) {
-                populateSound(sound[i], sound);
-                populateButton(sound[i], sound);
+                populateSound(sound[i]);
+                populateButton(sound[i]);
             }
         }
 
-        function populateSound(jsonObj, sound) {
+        function populateSound(jsonObj) {
             var myAudio = document.createElement('audio');
 
             myAudio.src = jsonObj['path'];
@@ -49,20 +49,18 @@
             myAudio.id = jsonObj['id'];
 
             section.appendChild(myAudio);
-            var i;
-            for (i=0; i < sound.length; i++) {
-                var mySound = document.createElement('audio');
-                mySound.src = sound[i]['path'];
-                mySound.preload = "auto";
-                mySound.id = sound[i]['id'];
-                section.appendChild(mySound);
-            }
         }
         function populateButton(jsonObj) {
             var myButton = document.createElement('button');
 
             myButton.textContent = jsonObj["name"];
-            myButton.onclick = function () { document.getElementById(jsonObj['id']).play() };
+            myButton.onclick = function () {
+                var audios = document.getElementsByTagName('audio');
+                for (var i = 0; i < audios.length; i++) {
+                    audios[i].pause();
+                } 
+                document.getElementById(jsonObj['id']).play() 
+            };
 
             section.appendChild(myButton);
         }
