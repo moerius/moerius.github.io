@@ -12,18 +12,13 @@
 </head>
 
 <body>
-    <header>
-        <div>
-            <h1 class="title-global">
-                <a href="#">OSS 117</a>
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="#">SoundBoard</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div>
+        <header class="text-center">
+                <p class="title">OSS 117</p>
+                <p class="tagline big">(Les répliques cultes)</p>
+                <p class="tagline">Extraits d'OSS 117</p>
+        </header>
+    </div>
 
     <section>
     </section>
@@ -41,12 +36,12 @@
             var sound = request.response;
             var i;
             for (i = 0; i < sound.length; i++) {
-                populateSound(sound[i]);
-                populateButton(sound[i]);
+                populateSound(sound[i], sound);
+                populateButton(sound[i], sound);
             }
         }
 
-        function populateSound(jsonObj) {
+        function populateSound(jsonObj, sound) {
             var myAudio = document.createElement('audio');
 
             myAudio.src = jsonObj['path'];
@@ -54,6 +49,14 @@
             myAudio.id = jsonObj['id'];
 
             section.appendChild(myAudio);
+            var i;
+            for (i=0; i < sound.length; i++) {
+                var mySound = document.createElement('audio');
+                mySound.src = sound[i]['path'];
+                mySound.preload = "auto";
+                mySound.id = sound[i]['id'];
+                section.appendChild(mySound);
+            }
         }
         function populateButton(jsonObj) {
             var myButton = document.createElement('button');
